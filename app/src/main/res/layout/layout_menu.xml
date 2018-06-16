@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/atp__activity_home_background"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/imgTronXoay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/atp__bg_circle_anim" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/atp__icon_logo_in_app" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="95dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginTop="23dp"
+        android:background="#32ff8133" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="95dp"
+        android:layout_height="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnPlay"
+        android:layout_marginTop="23dp"
+        android:background="#32ff8133" />
+
+    <View
+        android:layout_width="95dp"
+        android:layout_height="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnZalo"
+        android:layout_marginTop="23dp"
+        android:background="#3d2e7c" />
+
+    <View
+        android:layout_width="95dp"
+        android:layout_height="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnZalo"
+        android:layout_marginTop="23dp"
+        android:background="#3d2e7c" />
+
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="89dp"
+        android:layout_toLeftOf="@+id/view"
+        android:layout_toStartOf="@+id/view"
+        android:background="@drawable/background_button_play" />
+
+    <Button
+        android:id="@+id/btnZalo"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_alignStart="@+id/btnPlay"
+        android:layout_below="@+id/btnPlay"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/atp__button_zalo_login_normal" />
+</RelativeLayout>
